@@ -28,6 +28,7 @@ project-root/
     |-- backend/
     |-- requirements.txt
     |-- ...
+    |-- noteAI/
 ```
 
 ### Frontend (React) ⚛️
@@ -35,6 +36,12 @@ The `frontend` folder contains the React application responsible for the user in
 
 ### Backend (Django) 🐍
 The `backend` folder contains the Django application. It serves as the API layer for managing notes and integrates AI features.
+
+I have used two ways to integrate AI features 
+1. OpenAI API
+2. Llama3.1 8B instruct model
+
+For Llama refer the following link: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct 
 
 ---
 
@@ -98,24 +105,6 @@ Follow these instructions to set up and run the project locally.
 
 ---
 
-## API Endpoints 🔗
-
-| Method | Endpoint         | Description              |
-|--------|------------------|--------------------------|
-| GET    | /api/notes/      | Fetch all notes          |
-| POST   | /api/notes/      | Create a new note        |
-| GET    | /api/notes/{id}/ | Fetch a specific note    |
-| PUT    | /api/notes/{id}/ | Update a specific note   |
-| DELETE | /api/notes/{id}/ | Delete a specific note   |
-
-### AI Endpoints (Planned) 🤖
-| Method | Endpoint            | Description                          |
-|--------|---------------------|--------------------------------------|
-| POST   | /api/ai/generate/   | 🧠 Generate ideas from text             |
-| POST   | /api/ai/rewrite/    | ✍️ Rewrite text in a descriptive manner |
-
----
-
 ## Future Enhancements 🌟
 
 - Advanced AI features like sentiment analysis and summarization.
@@ -128,9 +117,4 @@ Follow these instructions to set up and run the project locally.
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
----
-
-## License 📄
-
-This project is licensed under the MIT License.
 
