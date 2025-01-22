@@ -46,7 +46,7 @@ def generate_random_idea():
     :return: A randomly generated idea.
     """
     try:
-        prompt = "Generate a random creative idea."
+        prompt = "Generate a random creative idea"
         inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
         outputs = model.generate(**inputs, max_length=512, temperature=1.0)
         return tokenizer.decode(outputs[0], skip_special_tokens=True)
