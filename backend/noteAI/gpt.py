@@ -29,7 +29,7 @@ def summarize_text(input_text):
     Summarize the input text using GPT-4.
 
     :param input_text: The text to be summarized.
-    :return: The summarized text.
+    :return: The summarized text
     """
     try:
         response = openai.ChatCompletion.create(
